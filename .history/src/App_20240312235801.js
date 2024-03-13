@@ -1,6 +1,6 @@
 import React from 'react'
-import Button from './components/Button'
-import { GoBell} from "react-icons/go";
+import Button from './Button'
+import { GoBell, GoCloud } from "react-icons/go";
 
 
 const App = () => {

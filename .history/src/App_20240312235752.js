@@ -1,6 +1,6 @@
 import React from 'react'
-import Button from './components/Button'
-import { GoBell} from "react-icons/go";
+import Button from './Button'
+import { GoBell, GoCloud } from "react-icons/go";
 
 
 const App = () => {
@@ -10,7 +10,7 @@ const App = () => {
             <Button success rounded outline><GoBell/>Click Me</Button>
         </div>
         <div>
-            <Button danger outline>Buy Now</Button>
+            <Button danger outline><GoCloud />Buy Now</Button>
         </div>
         <div>
             <Button warning>See Deals</Button>

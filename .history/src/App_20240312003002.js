@@ -1,22 +1,21 @@
 import React from 'react'
-import Button from './components/Button'
-import { GoBell} from "react-icons/go";
+import Button from './Button'
 
 
 const App = () => {
   return (
     <div>
         <div>
-            <Button success rounded outline><GoBell/>Click Me</Button>
+            <Button success rounded outline>Click Me</Button>
         </div>
         <div>
             <Button danger outline>Buy Now</Button>
         </div>
         <div>
-            <Button warning>See Deals</Button>
+            <Button warning>Alert</Button>
         </div>
         <div>
-            <Button secondary outline>Hide Ads</Button>
+            <Button secondary outline>Sign Up</Button>
         </div>
         <div>
             <Button primary rounded>Stavan</Button>

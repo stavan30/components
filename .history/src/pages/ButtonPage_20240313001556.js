@@ -1,9 +1,9 @@
 import React from 'react'
-import Button from './components/Button'
+import Button from '../components/Button'
 import { GoBell} from "react-icons/go";
 
 
-const App = () => {
+const ButtonPage = () => {
   return (
     <div>
         <div>
@@ -25,4 +25,4 @@ const App = () => {
   )
 }
 
-export default App
+export default ButtonPage

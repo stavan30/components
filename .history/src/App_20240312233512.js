@@ -1,13 +1,12 @@
 import React from 'react'
-import Button from './components/Button'
-import { GoBell} from "react-icons/go";
+import Button from './Button'
 
 
 const App = () => {
   return (
     <div>
         <div>
-            <Button success rounded outline><GoBell/>Click Me</Button>
+            <Button success rounded outline>Click Me</Button>
         </div>
         <div>
             <Button danger outline>Buy Now</Button>
