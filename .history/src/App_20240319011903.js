@@ -6,9 +6,9 @@ import ButtonPage from './pages/ButtonPage'
 
 const App = () => {
   return (
-    <div className='container mx-auto grid grid-cols-6 gap-4 mt-4'>
+    <div>
         <Sidebar/>
-        <div className='col-span-5'>
+        <div>
             <Route path='/accordion'>
                 <AccordionPage/>
             </Route>
