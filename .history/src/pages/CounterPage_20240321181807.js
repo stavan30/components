@@ -4,31 +4,18 @@ import { useReducer } from 'react'
 const CounterPage = ({initialCount}) => {
 
     const reducer = (state, action) => {
+        if (action.type === 'increment'){
+            return {
+                ...state,
+                count: state.count+1
+            }
+        }
 
-        switch(action.type) {
-            case 'increment':
-                return {
-                    ...state,
-                    count: state.count+1
-                };
-            case 'decrement':
-                return {
-                    ...state,
-                    count: state.count-1
-                };
-            case 'value-to-add':
-                return {
-                    ...state,
-                    valueToAdd: action.payload
-                };
-            case 'user-add-value':
-                return {
-                    ...state,
-                    count: state.count + state.valueToAdd,
-                    valueToAdd: 0
-                }
-            default:
-                return state
+        if (action.type === 'value-to-add'){
+            return {
+                ...state,
+                valueToAdd: action.payload
+            }
         }
     }
 
@@ -51,20 +38,19 @@ const CounterPage = ({initialCount}) => {
 
     function handleSubmit (event) {
         event.preventDefault();
-        dispatch({
-            type: 'user-add-value'
-        })
+
+        // setCount(count + valueToAdd)
+        // setValueToAdd(0)
     }
     const increment = () => {
+        // setCount(count+1)
         dispatch({
             type: 'increment'
         })
     }
 
     const decrement = () => {
-        dispatch({
-            type: 'decrement'
-        })
+        // setCount(count-1)
     }
   return (
     <div>

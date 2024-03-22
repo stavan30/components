@@ -21,12 +21,6 @@ const CounterPage = ({initialCount}) => {
                     ...state,
                     valueToAdd: action.payload
                 };
-            case 'user-add-value':
-                return {
-                    ...state,
-                    count: state.count + state.valueToAdd,
-                    valueToAdd: 0
-                }
             default:
                 return state
         }
@@ -51,9 +45,9 @@ const CounterPage = ({initialCount}) => {
 
     function handleSubmit (event) {
         event.preventDefault();
-        dispatch({
-            type: 'user-add-value'
-        })
+
+        // setCount(count + valueToAdd)
+        // setValueToAdd(0)
     }
     const increment = () => {
         dispatch({

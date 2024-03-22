@@ -21,12 +21,6 @@ const CounterPage = ({initialCount}) => {
                     ...state,
                     valueToAdd: action.payload
                 };
-            case 'user-add-value':
-                return {
-                    ...state,
-                    count: state.count + state.valueToAdd,
-                    valueToAdd: 0
-                }
             default:
                 return state
         }
